@@ -1,8 +1,10 @@
 .service_cards{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    // column-gap: 1rem;
     margin-top: 1.6rem;
+    @media screen and (max-width: 768px){
+        grid-template-columns: repeat(2, 1fr);
+    }
     .service__card{
         border: 1px solid lightgrey;
         width: 100%;

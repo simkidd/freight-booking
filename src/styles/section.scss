@@ -15,11 +15,18 @@
             column-gap: 2rem;
             margin-bottom: 2rem;
             align-items: center;
+            @media screen and (max-width: 768px){
+                grid-template-columns: repeat(1, 1fr);
+                row-gap: 0.8rem;
+            }
             .radio{
                 display: inline-flex;
                 border: 1px solid lightgrey;
                 border-radius: 3px;
                 overflow: hidden;
+                @media screen and (max-width: 768px){
+                    border: none;
+                }
                 input{
                     display: none;
                     &:checked + label{
@@ -35,6 +42,9 @@
                     transition: background 0.3s;
                     &:not(:last-of-type){
                         border-right: 1px solid lightgrey;
+                    }
+                    @media screen and (max-width: 768px){
+                        border: 1px solid lightgrey;
                     }
                 }
             }
@@ -72,6 +82,10 @@
             column-gap: 1.5rem;
             align-items: center;
             margin-bottom: 1rem;
+            @media screen and (max-width: 768px){
+                grid-template-columns: repeat(1, 1fr);
+                row-gap: 0.8rem;
+            }
             .input__container{
                 width: 100%;
                 .inner{
@@ -193,6 +207,9 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         row-gap: 1.5rem;
+        @media screen and (max-width: 768px){
+            grid-template-columns: repeat(1, 1fr);
+        }
         .additional__card{
             width: 100%;
             display: flex;
