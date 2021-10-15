@@ -1,0 +1,26 @@
+.booking_head{
+    display: flex;
+    
+    .booking__inner{
+        margin: 0 2rem;
+        margin-bottom: 1.5rem;
+        h2{
+            font-weight: 500;
+            margin: 0.6rem 0;
+        }
+    }
+}
+/*---- header -------*/
+@import './header.scss';
+
+/*--------- section -------*/
+@import './section.scss';
+
+/*-------- service card ------*/
+@import './serviceCard.scss';
+
+/*------- cargo input --------*/
+@import './cargoInput.scss';
+
+/*------------ buttons -----------*/
+@import './buttons.scss';

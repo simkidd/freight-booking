@@ -1,0 +1,214 @@
+/*----------- sevice section--------*/
+.services{
+    box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.05);
+}
+
+/*-------- location section --------*/
+.location{
+    box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.05);
+    .location__wrapper{
+        display: flex;
+        flex-direction: column;
+        .top{
+            display: grid;
+            grid-template-columns: 8rem auto auto;
+            column-gap: 2rem;
+            margin-bottom: 2rem;
+            align-items: center;
+            .radio{
+                display: inline-flex;
+                border: 1px solid lightgrey;
+                border-radius: 3px;
+                overflow: hidden;
+                input{
+                    display: none;
+                    &:checked + label{
+                        background: #3b5998;
+                        color: #fff;
+                    }
+                }
+                label{
+                    padding: 0.5rem 0.7rem;
+                    cursor: pointer;
+                    color: grey;
+                    background: #fff;
+                    transition: background 0.3s;
+                    &:not(:last-of-type){
+                        border-right: 1px solid lightgrey;
+                    }
+                }
+            }
+            .input__container{
+                width: 100%;
+                    .inner{
+                        background: #f2f2f2;
+                        box-sizing: border-box;
+                        width: 100%;
+                        padding: 0.5rem 0.7rem;
+                        border-radius: 3px;
+                        display: flex;
+                        align-items: center;
+                        svg{
+                            font-size: 1rem;
+                            margin-right: 0.4rem;
+                        }
+                        span{
+                            margin-right: 5px;
+                        }
+                        input{
+                            width: 100%;
+                            font-size: 14px;
+                            outline: none;
+                            border: none;
+                            background: transparent;
+                            padding: 0.2rem 0;
+                        }
+                    }
+                }
+        }
+        .bottom{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            column-gap: 1.5rem;
+            align-items: center;
+            margin-bottom: 1rem;
+            .input__container{
+                width: 100%;
+                .inner{
+                    background: #f2f2f2;
+                    box-sizing: border-box;
+                    width: 100%;
+                    padding: 0.5rem 0.7rem;
+                    border-radius: 3px;
+                    display: flex;
+                    align-items: center;
+                    svg{
+                        font-size: 1rem;
+                        margin-right: 0.4rem;
+                    }
+                    input{
+                        width: 100%;
+                        font-size: 14px;
+                        outline: none;
+                        border: none;
+                        background: transparent;
+                        padding: 0.2rem 0;
+                    }
+                }
+                .inner__select{
+                    background: #f2f2f2;
+                    box-sizing: border-box;
+                    width: 100%;
+                    padding: 0.5rem 0.7rem;
+                    border-radius: 3px;
+                    display: flex;
+                    align-items: center;
+                    select{
+                        width: 100%;
+                        font-size: 14px;
+                        outline:none;
+                        background-color: transparent;
+                        appearance: none;
+                        border: none;
+                        cursor: pointer;
+                        
+                    }
+                    svg{
+                        font-size: 1.4rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*-------------- cargo section ---------------*/
+.cargo{
+    box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.05);
+    .cargo__wrapper{
+        display: flex;
+        align-items: center;
+        .cargo__left{
+            flex: 0.4;
+            .cargo__leftTop{
+                margin: 1.6rem 0 2.5rem 0;
+                .dimensions{
+                    display: inline-flex;
+                    align-items: center;
+                    background: #f2f2f2;
+                    border-radius: 6px;
+                    border: 1px solid #f2f2f2;
+                    overflow: hidden;
+                    padding: 1px;
+                    cursor: pointer;
+                    .total{
+                        color: #3b5998;
+                        background: #fff;
+                        padding: 0.5rem 1.8rem;
+                        border-radius: 6px;
+                        box-shadow: 0px 0px 0px 1px rgba(0,0,0,0.05);
+                        span{
+                            font-size: 14px;
+                        }
+                    }
+                    .package{
+                        padding: 0.5rem 1.8rem;
+                        color: grey;
+                        span{
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+            .cargo__leftBottom{
+                margin: 1rem 0;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                column-gap: 2rem;
+            }
+        }
+        .cargo__right{
+            flex: 0.64;
+            position: relative;
+            .cargo__rightItem{
+                display: flex;
+                align-items: center;
+                position: absolute;
+                top: -5.5rem;
+                right: 0;
+                p{
+                    margin-left: 1rem;
+                }
+            }
+        }
+    }
+}
+
+/*------------- additional section---------------*/
+.addtional__services{
+    box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.05);
+    .additional__wrapper{
+        padding-top: 2.3rem;
+        padding-bottom: 1rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 1.5rem;
+        .additional__card{
+            width: 100%;
+            display: flex;
+            align-items: flex-start;
+            .text{
+                margin-left: 2rem;
+                h3{
+                    font-size: 15px;
+                    margin-bottom: 5px;
+                }
+                p{
+                    color: #a7a6a6;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+

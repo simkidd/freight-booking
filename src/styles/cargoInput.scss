@@ -1,0 +1,33 @@
+.input__outline{
+    width: 100%;
+    position: relative;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+    padding: 0.3rem 0;
+    
+    label{
+        position: absolute;
+        display: inline-block;
+        top: -8px;
+        left: 10px;
+        background: #fff;
+        padding: 0 0.3rem;
+        font-size: 14px;
+    }
+    .input__inputSpan{
+        display: flex;
+        align-items: center;
+        input{
+            padding: 0.5rem 0.7rem;
+            width: 100%;
+            box-sizing: border-box;
+            outline: none;
+            border: none;
+        }
+        span{
+            padding: 0.5rem;
+            color: #a7a6a6;
+            font-size: 14px;
+        }
+    }
+}
